@@ -2,7 +2,21 @@
 
 .main
   .main__logo
-    LifeColor
+    .main__logo--box
+      = link_to "#", class: "logo__life" do
+        Life
+      = link_to "#", class: "logo__color" do
+        Color
+    %p 毎日の行動を彩っていきましょう
   .main__contents
+    .main__contents--left
+      .left__box
+        .login--registration
+          = link_to "#", class: "login" do
+            ログイン
+          = link_to "#", class: "registration" do
+            新規登録
+        = link_to "#", class: "guest--login" do
+          ゲストログイン
   
 .footer

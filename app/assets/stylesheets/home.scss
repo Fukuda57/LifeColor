@@ -1,26 +1,91 @@
 .header {
   height: 80px;
-  background-color: black;
+  background-color: darken(grey, 30%);
 }
 
 .main {
   height: 1000px;
-  // width: 100%;
   background: url("背景1.jpg");
   background-size: cover;
   position: relative;
   &__logo {
-    background-color: blue;
     height: 100px;
     width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    &--box {
+      // background-color: pink;
+      width: 250px;
+      display: inline-block;
+      
+      .logo__life {
+        text-decoration: none;
+        color: greenyellow;
+        font-size: 50px;
+      }
+      .logo__color {
+        text-decoration: none;
+        color: pink;
+        font-size: 50px;
+      }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.514);
+    }
   }
   &__contents {
     height: 500px;
     width: 100%;
     position: absolute;
     top: 100px;
-    background-color: pink;
-    
+    // background-color: pink;
+    &--left {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .left__box {
+        width: 260px;
+        margin: 0 auto;
+        .login--registration {
+          display: flex;
+          justify-content: space-between;
+          .login {
+            color: white;
+            background-color: grey;
+            display: inline-block;
+            padding: 10px 30px;
+            text-decoration: none;
+          }
+          .login:hover {
+            background-color: darken(grey, 10%);
+          }
+          .registration {
+            color: white;
+            background-color: grey;
+            display: inline-block;
+            padding: 10px 30px;
+            text-decoration: none;
+          }
+          .registration:hover {
+            background-color: darken(grey, 10%);
+          }
+        }
+        .guest--login {
+          color: white;
+          background-color: grey;
+          display: block;
+          width: 111px;
+          margin: 0 auto;
+          padding: 10px 30px;
+          margin-top: 14px;
+          text-decoration: none;
+        }
+        .guest--login:hover {
+          background-color: darken(grey, 10%);
+        }
+      }
+    }
   }
 }
 
